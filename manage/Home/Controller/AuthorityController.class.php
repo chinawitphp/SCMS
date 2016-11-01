@@ -6,7 +6,7 @@ class AuthorityController extends Controller
     //权限验证
     function _initialize()
     {
-       var_dump('验证test<br>');
+       /* var_dump('验证test<br>'); */
     }
 
 }
