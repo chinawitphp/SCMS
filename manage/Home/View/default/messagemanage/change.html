@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <table border="1" width="500" align="center">
+        <tr>
+            <th>id</th>
+             <th>昵称</th>
+              <th>用户名</th>
+              <th>角色</th>
+              <th>电话</th>
+              <th>email</th>
+               <th>操作</th>
+        </tr>
+    <volist name="data" id="vo">
+    <tr>
+    <td>{$vo.id}</td>
+    <td>{$vo.username}</td>
+    <td>{$vo.username2}</td>
+    <td>{$vo.root}</td>
+    <td>{$vo.number}</td>
+    <td>{$vo.email}</td>
+    <td><a href="__URL__/del/id/{$vo.id}">删除</a>|<a href="__URL__/cha/id/{$vo.id}">修改</a></td>
+    </tr>
+    </volist>
+    </table>
+        {$page}
+   </body>
+</html>

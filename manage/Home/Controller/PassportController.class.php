@@ -1,63 +1,53 @@
 <?php
 namespace Home\Controller;
-class SeamenManageController extends AuthorityController {
-    
-    //返回签证机关
+use Think\Controller;
+class PassportController extends Controller {
     public function addIndex(){
         $signorg = D("signorgtype");
         $list=$signorg->select();
-        //var_dump($list);
         $this->assign('org', $list);
         $this->display();
     }
-    //ajax向此传值，返回json格式数据，包括身份证和姓名
     public function getCommInfo(){
         if ($_GET['idnumber']) {
             $map['idnumber'] = array('like', "{$_GET['idnumber']}%");
             $map['isdel'] = 0;
-            $info = D("holdercomminfo");
+            $info = D("passport");
             $list=$info->field('id,idnumber,realname')->where($map)->select();
-            //输完18位后判断是否该身份证对应的是否已有海员证
             if(strlen($_GET['idnumber'])==18){
                 $exist['holderid']=intval($list[0][id]);
                 if(intval(D("seameninfo")->where($exist)->count())){
-                    $sign[sign] = '1';
-                    $sign[content] = '已经存在';
-                    $this->ajaxReturn($sign);
+                    $this->ajaxReturn(list($warn,$states) = array('已经存在','1'));
                 }
             }else{
                 $this->ajaxReturn($list);
             }
         }
     }
-    //提交数据
     public function addInfo(){
-        //添加个人通用信息
-        $commmap['idnumber'] = $_POST['idnumber'];
+        $commmap['idnumber'] = $_GET['idnumber'];
         $info = D("holdercomminfo");
         $count = intval($info->where($commmap)->count());
         if(!$count){
-            $commmap['realname'] = "{$_POST['realname']}";
-            $commmap['nation'] = "{$_POST['nation']}";
+            $commmap['realname'] = "{$_GET['realname']}";
+            $commmap['nation'] = "中国";
             $info->data($commmap)->add(); 
-            //获取新加信息对应的id
             $temp_id=$info->field('id')->where($commmap)->select();
             $seamenmap['holderid']=intval($temp_id[0][id]);
         }
-        //添加海员证信息
         $seamen = D("seameninfo");
         if ($_GET['holderid']) {
-            $seamenmap['holderid'] = $_POST['holderid'];
+            $seamenmap['holderid'] = $_GET['holderid'];
         }
-        $seamenmap['birtharea'] = "{$_POST['birtharea']}";
-        $seamenmap['signorgid'] = $_POST['signorgid'];
-        $seamenmap['regtime'] = $_POST['regtime'];
-        $seamenmap['endtime'] = $_POST['endtime'];
+        $seamenmap['birtharea'] = "{$_GET['birtharea']}";
+        $seamenmap['signorgid'] = $_GET['signorgid'];
+        $seamenmap['regtime'] = $_GET['regtime'];
+        $seamenmap['endtime'] = $_GET['endtime'];
         if($seamen->add($seamenmap)){
-             $this->success('添加成功') ;
-         } else {
-             $this->error('添加失败') ;
-         }
+            $this->success('添加成功') ;
+        } else {
+            $this->error('添加失败') ;
+        }
     }
     
     public function searchIndex(){
@@ -66,7 +56,6 @@ class SeamenManageController extends AuthorityController {
         $this->assign('org', $list);
         $this->display();
     }
-    //查询功能实现
     public function searchInfo(){
         if($_GET['idnumber']){
             $map['idnumber'] = array('like', "%{$_GET['idnumber']}%");
@@ -86,7 +75,6 @@ class SeamenManageController extends AuthorityController {
         if($_GET['signorgid']){
             $map['signorgid'] = "{$_GET['signorgid']}";
         }
-        //将收到的起止时间转化为时间戳进行比较
         if($_GET['regtimebegin']){
             $temptimestart=explode("-",$_GET['regtimebegin']);
             $timestampstart=mktime(0,0,0,$temptimestart[1],$temptimestart[2],$temptimestart[0]);
@@ -118,7 +106,7 @@ class SeamenManageController extends AuthorityController {
         
         $search = D("seameninfo");
         $count = $search->count();
-        $Page=new \Think\Page($count,2);
+        $Page=new \Think\Page($count,3);
         $Page->setConfig('header','<li class="rows">共<b>%TOTAL_ROW%</b>条记录  每页<b>%LIST_ROW%</b>条  第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页</li>');
         $Page->setConfig('prev','上一页');
         $Page->setConfig('next','下一页');
@@ -131,10 +119,9 @@ class SeamenManageController extends AuthorityController {
         echo json_encode($list);
         //$this->assign('list',$list);// 赋值数据集
         //$this->assign('page',$show);// 赋值分页输出
-         // 输出模板
+        $this->display(); // 输出模板
     }
     
-    //查看信息详细内容，渲染模版
     public function infoDetail(){
         $signorg = D("signorgtype");
         $orglist=$signorg->select();
@@ -150,7 +137,6 @@ class SeamenManageController extends AuthorityController {
             $this->display();
         }
     }
-    //修改
     public function infoEdit(){
         $condition['holderid'] = "{$_GET['holderid']}";
         if($_GET['signorgid']){
@@ -162,12 +148,9 @@ class SeamenManageController extends AuthorityController {
         if($_GET['endtime']){
             $map['endtime'] = "{$_GET['endtime']}";
         }
-        $edit = D("seameninfo"); // 实例化User对象
-        // 要修改的数据对象属性赋值
+        $edit = D("seameninfo"); 
         $edit->create($map);
-        $edit->where($condition)->save(); // 根据条件更新记录
-    }
-    public function jsontest(){
-        $this->display();
+        $edit->where($condition)->save(); 
     }
 }
+

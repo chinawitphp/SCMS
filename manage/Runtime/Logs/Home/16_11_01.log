@@ -1553,3 +1553,898 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
 
+[ 2016-11-01T16:14:37+08:00 ] 127.0.0.1 /home/seamenManage/addindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.395684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.318754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.318932s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:1.3729s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000969s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001164s ]
+NOTIC: [8] Use of undefined constant ms_signorgname - assumed 'ms_signorgname' G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\c52f7dd429b32ba6ca93bfdd21ba85ec.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.775601s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.775747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.303054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.303158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.263300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.263411s ]
+
+[ 2016-11-01T16:17:15+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0684s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '4%' AND `isdel` = 0  [ RunTime:0.0928s ]
+
+[ 2016-11-01T16:17:19+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0625s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '1%' AND `isdel` = 0  [ RunTime:0.0004s ]
+
+[ 2016-11-01T16:17:42+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.1061s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '17%' AND `isdel` = 0  [ RunTime:0.0004s ]
+
+[ 2016-11-01T16:17:49+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.1317s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '11%' AND `isdel` = 0  [ RunTime:0.0005s ]
+
+[ 2016-11-01T16:17:55+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=412635197708041366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0731s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '412635197708041366%' AND `isdel` = 0  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.1147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` WHERE `holderid` = 1 LIMIT 1   [ RunTime:0.0292s ]
+
+[ 2016-11-01T16:17:57+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0169s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '11%' AND `isdel` = 0  [ RunTime:0.0005s ]
+
+[ 2016-11-01T16:19:31+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=412635197708041366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0697s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '412635197708041366%' AND `isdel` = 0  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` WHERE `holderid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-11-01T16:19:41+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0185s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '11%' AND `isdel` = 0  [ RunTime:0.0007s ]
+
+[ 2016-11-01T16:24:03+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=111&realname=abae
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0950s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '111' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0126s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 49 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 50 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('',NULL,NULL,NULL) [ RunTime:0.1261s ]
+NOTIC: [8] Undefined index: HTTP_REFERER G:\PHP\SEAMEN ManageSys\ThinkPHP\Library\Think\Controller.class.php 第 283 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-11-01T16:24:04+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:24:05+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:24:06+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=111&realname=abae
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '111' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0134s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 49 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 50 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('',NULL,NULL,NULL) [ RunTime:0.0338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-11-01T16:24:06+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:24:07+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:25:26+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=991&realname=abae
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0721s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '991' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `ms_holdercomminfo` (`idnumber`,`realname`,`nation`) VALUES ('991','abae','中国') [ RunTime:0.1111s ]
+SQL: SELECT `id` FROM `ms_holdercomminfo` WHERE `idnumber` = '991' AND `realname` = 'abae' AND `nation` = '中国'  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0126s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 49 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 50 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`holderid`,`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('14','',NULL,NULL,NULL) [ RunTime:0.0744s ]
+NOTIC: [8] Undefined index: HTTP_REFERER G:\PHP\SEAMEN ManageSys\ThinkPHP\Library\Think\Controller.class.php 第 283 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-11-01T16:25:26+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:25:27+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:25:28+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=991&realname=abae
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '991' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0123s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 49 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 50 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('',NULL,NULL,NULL) [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-11-01T16:25:28+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:25:29+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:27:36+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=991&realname=abae&birtharea=%E4%B8%AD%E5%9B%BD&signorgid=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0919s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '991' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0553s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('中国','8',NULL,NULL) [ RunTime:0.0661s ]
+NOTIC: [8] Undefined index: HTTP_REFERER G:\PHP\SEAMEN ManageSys\ThinkPHP\Library\Think\Controller.class.php 第 283 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2016-11-01T16:27:36+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:27:37+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:27:38+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=991&realname=abae&birtharea=%E4%B8%AD%E5%9B%BD&signorgid=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0345s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '991' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0146s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('中国','8',NULL,NULL) [ RunTime:0.0673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-11-01T16:27:38+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:27:39+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:28:38+08:00 ] 127.0.0.1 /home/seamenManage/addinfo/?idnumber=1221&realname=abae&birtharea=%E4%B8%AD%E5%9B%BD&signorgid=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_holdercomminfo` WHERE `idnumber` = '1221' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `ms_holdercomminfo` (`idnumber`,`realname`,`nation`) VALUES ('1221','abae','中国') [ RunTime:0.0855s ]
+SQL: SELECT `id` FROM `ms_holdercomminfo` WHERE `idnumber` = '1221' AND `realname` = 'abae' AND `nation` = '中国'  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 46 行.
+NOTIC: [8] Undefined index: regtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 51 行.
+NOTIC: [8] Undefined index: endtime G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 52 行.
+SQL: INSERT INTO `ms_seameninfo` (`holderid`,`birtharea`,`signorgid`,`regtime`,`endtime`) VALUES ('15','中国','8',NULL,NULL) [ RunTime:0.0977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-11-01T16:34:55+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/?idnumber=121&realname=abc&nation=%E4%B8%AD%E5%9B%BD&birtharea=china&signorgid=9&regtimebegin=2015-09-13&regtimeend=2015-09-15&endtimebegin=1999-08-08&endtimeend=1999-10-10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0797s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `idnumber` LIKE '%121%' AND `realname` LIKE '%abc%' AND `nation` = '中国' AND `birtharea` = 'china' AND `signorgid` = '9' AND `regtime` BETWEEN '2015-09-13' AND '2015-09-15' AND `endtime` BETWEEN '1999-08-08' AND '1999-10-10' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 0,3   [ RunTime:0.0592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-11-01T16:36:17+08:00 ] 127.0.0.1 /home/seamenManage/infoDetail/?id=8&type=app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0339s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0830s ]
+SQL: SELECT `holderid`,`idnumber`,`realname`,`regtime`,`endtime`,`signorgid` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE ms_seameninfo.id = '8'  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant app - assumed 'app' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 143 行.
+
+[ 2016-11-01T16:36:46+08:00 ] 127.0.0.1 /home/seamenManage/infoDetail/?id=10&type=app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.1362s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0432s ]
+SQL: SELECT `holderid`,`idnumber`,`realname`,`regtime`,`endtime`,`signorgid` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE ms_seameninfo.id = '10'  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant app - assumed 'app' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 143 行.
+
+[ 2016-11-01T16:36:52+08:00 ] 127.0.0.1 /home/seamenManage/infoDetail/?id=8&type=app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0818s ]
+SQL: SELECT `holderid`,`idnumber`,`realname`,`regtime`,`endtime`,`signorgid` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE ms_seameninfo.id = '8'  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant app - assumed 'app' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 143 行.
+
+[ 2016-11-01T16:41:19+08:00 ] 127.0.0.1 /home/SignOrgSet/del/?id=35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0165s ]
+SQL: DELETE FROM `ms_signorgtype` WHERE `id` = 35 [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2016-11-01T16:41:28+08:00 ] 127.0.0.1 /home/SignOrgSet/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0273s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0006s ]
+ERR: 模板不存在:./manage/Home/View/default/SignOrgSet/index.html
+
+[ 2016-11-01T16:41:40+08:00 ] 127.0.0.1 /home/SignOrgSet/add/?signorgname=%E4%B8%AD%E6%96%87%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0190s ]
+SQL: INSERT INTO `ms_signorgtype` (`MS_Signorgname`) VALUES ('中文测试') [ RunTime:0.0426s ]
+NOTIC: [8] Undefined index: HTTP_REFERER G:\PHP\SEAMEN ManageSys\ThinkPHP\Library\Think\Controller.class.php 第 283 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-11-01T16:41:41+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:41:42+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:41:43+08:00 ] 127.0.0.1 /home/SignOrgSet/add/?signorgname=%E4%B8%AD%E6%96%87%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0161s ]
+SQL: INSERT INTO `ms_signorgtype` (`MS_Signorgname`) VALUES ('中文测试') [ RunTime:0.0542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-11-01T16:41:43+08:00 ] 127.0.0.1 /Public/assets/css/bs3/dpl.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:41:44+08:00 ] 127.0.0.1 /Public/assets/css/bs3/bui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-11-01T16:42:41+08:00 ] 127.0.0.1 /home/SignOrgSet/edit/?id=1&signorgname=haishijucs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0309s ]
+NOTIC: [8] Undefined index: validate G:\PHP\SEAMEN ManageSys\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\PHP\SEAMEN ManageSys\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ms_signorgtype` SET `MS_Signorgname`='haishijucs' WHERE `id` = 1 [ RunTime:0.1090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-11-01T18:13:10+08:00 ] 127.0.0.1 /seamen_input.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载控制器:SeamenInput
+
+[ 2016-11-01T18:22:36+08:00 ] 127.0.0.1 /home/seamenManage/searchIndex/?idnumber=121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0006s ]
+ERR: 模板不存在:./manage/Home/View/default/SeamenManage/searchindex.html
+
+[ 2016-11-01T18:22:47+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/?regtimebegin=2016-09-13&regtimeend=2016-09-15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 69 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 72 行.
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+NOTIC: [8] Undefined index: nation G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 78 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 81 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 84 行.
+NOTIC: [8] Undefined index: endtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 101 行.
+NOTIC: [8] Undefined index: endtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0765s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '2016-09-13' AND '2016-09-15' AND `endtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 0,3   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-11-01T18:23:00+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 69 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 72 行.
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+NOTIC: [8] Undefined index: nation G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 78 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 81 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 84 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 88 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 94 行.
+NOTIC: [8] Undefined index: endtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 101 行.
+NOTIC: [8] Undefined index: endtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0485s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `endtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 0,3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-11-01T18:23:06+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/?p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 69 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 72 行.
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+NOTIC: [8] Undefined index: nation G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 78 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 81 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 84 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 88 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 94 行.
+NOTIC: [8] Undefined index: endtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 101 行.
+NOTIC: [8] Undefined index: endtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0711s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `endtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 3,3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-11-01T18:23:10+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 69 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 72 行.
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+NOTIC: [8] Undefined index: nation G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 78 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 81 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 84 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 88 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 94 行.
+NOTIC: [8] Undefined index: endtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 101 行.
+NOTIC: [8] Undefined index: endtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.1647s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `endtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 0,3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-11-01T18:23:27+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/?p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 69 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 72 行.
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+NOTIC: [8] Undefined index: nation G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 78 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 81 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 84 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 88 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 94 行.
+NOTIC: [8] Undefined index: endtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 101 行.
+NOTIC: [8] Undefined index: endtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `endtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 0,2   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-11-01T18:23:30+08:00 ] 127.0.0.1 /home/seamenManage/searchinfo/?p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 69 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 72 行.
+NOTIC: [8] Undefined index: holderid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 75 行.
+NOTIC: [8] Undefined index: nation G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 78 行.
+NOTIC: [8] Undefined index: birtharea G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 81 行.
+NOTIC: [8] Undefined index: signorgid G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 84 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 88 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 94 行.
+NOTIC: [8] Undefined index: endtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 101 行.
+NOTIC: [8] Undefined index: endtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0752s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT ms_seameninfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `endtime` BETWEEN '1970-01-02' AND '2016-11-01' AND `seamenisdel` = '0' AND `isdel` = '0' LIMIT 2,2   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: list G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+NOTIC: [8] Undefined variable: page G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\a3a19161e2aeca327304749b630fcee5.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-11-01T18:28:29+08:00 ] 127.0.0.1 /home/seamenManage/searchIndex/?idnumber=121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0005s ]
+ERR: 模板不存在:./manage/Home/View/default/SeamenManage/searchindex.html
+
+[ 2016-11-01T19:06:56+08:00 ] 127.0.0.1 /home/seamenManage/searchIndex/?idnumber=121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0004s ]
+ERR: 模板不存在:./manage/Home/View/default/SeamenManage/searchindex.html
+
+[ 2016-11-01T19:11:41+08:00 ] 127.0.0.1 /home/seamenManage/addindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant ms_signorgname - assumed 'ms_signorgname' G:\PHP\SEAMEN ManageSys\manage\Runtime\Cache\Home\c52f7dd429b32ba6ca93bfdd21ba85ec.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-11-01T19:20:13+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.0913s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '11%' AND `isdel` = 0  [ RunTime:0.0006s ]
+
+[ 2016-11-01T19:21:05+08:00 ] 127.0.0.1 /home/seamenManage/getCommInfo/?idnumber=412635197708041366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `ms_holdercomminfo` [ RunTime:0.1011s ]
+SQL: SELECT `id`,`idnumber`,`realname` FROM `ms_holdercomminfo` WHERE `idnumber` LIKE '412635197708041366%' AND `isdel` = 0  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0905s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ms_seameninfo` WHERE `holderid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+

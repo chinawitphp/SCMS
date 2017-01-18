@@ -18,7 +18,7 @@
         //rbac
         // 配置文件增加设置
         //是否需要认证，设置为true时$rbac::AccessDecision()函数才会根据当前的操作检查权限并返回true或false，，设为false只返回true
-        'USER_AUTH_ON'     =>    true,
+        'USER_AUTH_ON'     =>    false,
         //认证类型,2代表每次进行操作的时候都会数据库取出权限(权限更改即时生效)，1代表只在登录的时候取出权限(权限更改下次登录时生效)
         'USER_AUTH_TYPE'     =>    1,
         //认证识别号,执行$rbac::saveAccessList();的时候回用以这个为键值的session去数据库取权限

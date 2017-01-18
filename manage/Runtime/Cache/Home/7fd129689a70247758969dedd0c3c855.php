@@ -6,10 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="/Public/css/style-seaman.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/jquery-ui.min.css">
-	<script type="text/javascript" src="/Public/js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/Public/css/jquery.page.css">
 	<script type="text/javascript" src="/Public/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="/Public/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/Public/js/jquery.page.js"></script>
 	<script type="text/javascript" src="/Public/js/seaman.js"></script>
 	<script type="text/javascript" src="/Public/js/laydate.js"></script>
 </head>
@@ -75,9 +75,9 @@
 			<li><a href="#" onclick="openMenu('menu_6')"><span class="glyphicon glyphicon-file"></span>海员证管理<span class="glyphicon
 			 glyphicon-chevron-down"></span></a></li>
 			<ul id="menu6">
-				<li><a href="./seaman_input.html"><span class="glyphicon glyphicon-pencil"></span>录入</a></li>
-				<li><a href="./seaman_check.html"><span class="glyphicon glyphicon-search"></span>查询</a></li>
-				<li><a href="./seaman_detail.html"><span class="glyphicon glyphicon-stats"></span>详细</a></li>
+				<li><a href="/seamenManage/addIndex/"><span class="glyphicon glyphicon-pencil"></span>录入</a></li>
+				<li><a href="/seamenManage/searchIndex/"><span class="glyphicon glyphicon-search"></span>查询</a></li>
+				<li><a href="/seamenManage/infoDetail/"><span class="glyphicon glyphicon-stats"></span>详细</a></li>
 			</ul>
 			<li><a href="#" onclick="openMenu('menu_7')"><span class="glyphicon glyphicon-file"></span>护照管理<span class="glyphicon
 			 glyphicon-chevron-down"></span></a></li>
@@ -86,7 +86,7 @@
 				<li><a href="./passport_check.html"><span class="glyphicon glyphicon-search"></span>查询</a></li>
 				<li><a href="./passport_detail.html"><span class="glyphicon glyphicon-stats"></span>详细</a></li>
 			</ul>
-			<li><a href="./expired_check.html"><span class="glyphicon glyphicon-zoom-in"></span>证书过期情况查询</a></li>
+			<li><a href="/DipExpriedSearch/"><span class="glyphicon glyphicon-zoom-in"></span>证书过期情况查询</a></li>
 			<li><a href="#" onclick="openMenu('menu_8')"><span class="glyphicon glyphicon-time"></span>日志管理<span class="glyphicon
 			 glyphicon-chevron-down"></span></a></li>
 			<ul id="menu8">
@@ -98,7 +98,7 @@
 				<li><a href="./set_time.html"><span class="glyphicon glyphicon-bell"></span>提醒时间设置</a></li>
 				<li><a href="./set_type.html"><span class="glyphicon glyphicon-bookmark"></span>证书种类设置</a></li>
 				<li><a href="./set_name.html"><span class="glyphicon glyphicon-font"></span>培训合格证名称设置</a></li>
-				<li><a href="/Home/SignOrgSet/"><span class="glyphicon glyphicon-briefcase"></span>签发机关管理</a></li>
+				<li><a href="./set_sign.html"><span class="glyphicon glyphicon-briefcase"></span>签发机关管理</a></li>
 				<li><a href="./set_limit.html"><span class="glyphicon glyphicon-ban-circle"></span>适用的限制</a></li>
 				<li><a href="./set_level.html"><span class="glyphicon glyphicon-tower"></span>等级与职务</a></li>
 				<li><a href="./set_item.html"><span class="glyphicon glyphicon-book"></span>公约条款</a></li>
@@ -108,123 +108,117 @@
 		<div class="side-bottom"></div>
 	</div>
 </div>
-<div class="col-md-9 col-md-offset-3 main-content">
+<div class="col-md-10 col-md-offset-3 main-content">
 <div class="row">
 	<div class="col-md-9">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">海员证——录入</h3>
+				<h3 class="panel-title">证书过期情况查询</h3>
 			</div>
 			<div class="panel-body">
-				<form role="form" class="form-horizontal" action="/home/seamen_manage/addinfo/" method="post">
+				<form role="form" class="form-horizontal" action="" method="post">
+				    <div class="form-group">
+				    <label class="col-sm-2 control-label">资格证类别</label>
+				    <div class="col-sm-8 select_user">
+				    <select class="form-control input-lg" name="dip_card">
+				    	<option value="0">全部</option>
+				    	<option value="1">海员船员合格证培训证书</option>
+				    	<option value="2">海员船员健康证书</option>
+				    	<option value="3">海员船员适任证书</option>
+				    	<option value="4">海海船证</option>
+				    	<option value="5">护照</option>
+				    </select>
+				    </div>
+				    </div>
+				    <div class="form-group-separator"></div>
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-1">持证人身份证号</label>
-						<div class="col-sm-8">
-							<input type="text" name="idnumber" class="form-control pass_change" id="field-1" placeholder="请输入身份证号" required="required" onchange="id_card()">
+						<div class="col-sm-3">
+							<input type="text" name="card" class="form-control pass_change" id="field-1" placeholder="请输入身份证号" required="required">
 						</div>
-					</div>
-					<div class="form-group-separator"></div>
-					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-2">持证人姓名</label>
-						<div class="col-sm-4">
-							<input type="text" name="realname" class="form-control pass_change" id="field-2" placeholder="请输入姓名" value="">
-						</div>
-					</div>
-					<div class="form-group-separator"></div>
-					<div class="form-group">
-					<label class="col-sm-2 control-label">性别</label>
-					<div class="col-sm-3 select_user">
-					<select class="form-control input-lg" name="sex">
-						<option>男</option>
-						<option>女</option>
-					</select>
-					</div>
-					<label class="col-sm-2 control-label" for="field-3">国籍</label>
-					<div class="col-sm-3">
-						<input type="text" name="nation" class="form-control pass_change" id="field-3" placeholder="请输入国籍" value="中国">
-					</div>
-					</div>
-					<div class="form-group-separator"></div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label" for="field-4">出生日期</label>
 						<div class="col-sm-3">
-							<input type="text" name="birth" class="form-control pass_change" id="field-4" onClick="laydate()" placeholder="请输入日期">
-						</div>
-						<label class="col-sm-2 control-label">出生地点</label>
-						<div class="col-sm-3 select_user">
-						<select name="birtharea" class="form-control input-lg">
-							<option>辽宁省</option>
-						</select>
+							<input type="text" name="name" class="form-control pass_change" id="field-2" placeholder="请输入姓名" value="">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label" for="field-5">签发日期</label>
+						<label class="col-sm-2 control-label" for="field-6">签发日期开始</label>
 						<div class="col-sm-3">
-							<input type="text" name="regtime" class="form-control pass_change" id="field-5" onClick="laydate()" placeholder="请输入签发日期">
+							<input type="text" name="reg_time" class="form-control pass_change" id="field-6" placeholder="请输入签发日期" onclick="laydate()">
 						</div>
-						<label class="col-sm-2 control-label" for="field-6">有效期至</label>
+						<label class="col-sm-2 control-label" for="field-4">签发日期截至</label>
 						<div class="col-sm-3">
-							<input type="text" name="endtime" class="form-control pass_change" id="field-6" onClick="laydate()" placeholder="请输入截止日期">
+							<input type="text" name="end_time" class="form-control pass_change" id="field-4" placeholder="请输入签发日期" onclick="laydate()">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
-					<label class="col-sm-2 control-label">签发机关</label>
-					<div class="col-sm-8 select_user">
-					<select name="signorgid" class="form-control input-lg">
-					<?php if(is_array($org)): foreach($org as $key=>$vo): ?><option value=<?php echo ($vo["id"]); ?>><?php echo ($vo["ms_signorgname"]); ?></option>");<?php endforeach; endif; ?>
-					</select>
-					</div>
+						<label class="col-sm-2 control-label" for="field-3">距离过期还有</label>
+						<div class="col-sm-2">
+							<input type="text" name="" class="form-control pass_change" id="field-3" placeholder="" value="">
+						</div>
+						<div class="col-sm-1 control-label">月</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
-						<button type="submit" class="btn btn-info btn-single btn-lg">确认添加</button>
+					<div class="form-group">
+						<button type="button" class="btn btn-info btn-single btn-lg" onclick="check_expired()">查询</button>
 					</div>
+					<div class="form-group-separator"></div>
+					<div class="form-group-separator"></div>
 				</form>
+				<div class="table-responsive">
+						<table cellspacing="0" class="table table-small-font table-bordered table-striped">
+							<thead>
+							<tr>
+								<th>类别</th>
+								<th>持证人姓名</th>
+								<th>持证人身份证</th>
+								<th>签发日期</th>
+								<th>有效期至</th>
+								<th>距离过期时间（月）</th>
+							</tr>
+							</thead>
+							<tbody id="in_html">
+						   <!--  <tr>
+						    	<th></th>
+						    	<th></th>
+						    	<th></th>
+						    	<th></th>
+						    	<th></th>
+						    	<th></th>
+						    </tr> -->
+							</tbody>
+						</table>
+					</div>
+					<div id="page"></div>
 			</div>
 		</div>
 	</div>
 </div>
 </div>
 <script type="text/javascript">
-	//addIndex();
-
-    // 身份证号关联模块
-    $(document).ready(function(){
-    	var id_list=new Array();
-    	var idnumberList;
-    	$.ajax({
-    		type: "GET",
-    		url: "http://123.56.236.250/index.php/home/seamenManage/getCommInfo/?idnumber=1",
-    		dataType: "json",
-    		//async:false,
-    		success:function(msg){
-    			idnumberList=msg;
-    			for (var i=0;i<msg.length;i++){
-    				id_list[i]=msg[i].idnumber;
-    			}
-    		},
-    	});
-    	//console.log(id_list);
-    	$("input[name='card']").on("input",function(event){
-    		var input_value=event.target.value;
-    		if (input_value.length>1){
-    			$("input[name='card']").autocomplete({
-    				source: id_list,
-    			})
-    		}
-    	});
-    	$("input[name='card']").blur(function(){
-    		var id_number=$("input[name='card']").val();
-    		for (var i=0;i<id_list.length;i++){
-    			if (id_number == idnumberList[i].idnumber){
-    				$("input[name='name']").val( idnumberList[i].realname);
-    				break;
-    			}
-    		}
-    	});
-    });
+	// $(document).ready(function(){
+	// 	var id_list=new Array();
+	// 	var dip_list=new Array();
+	// 	$.ajax({
+	// 		type:"GET",
+	// 		url:"http://123.56.236.250/index.php/home/DipExpriedSearch/Index",
+	// 		dateType:"json",
+	// 		succeess:function(msg){
+	// 			for (var i=0;i<msg.length;i++){
+	// 				id_list[i]=smg[i].id;
+	// 				dip_list[i]=msg[i].dipname;
+	// 			}
+	// 		},
+	// 	});
+	// 	var innerStr="";
+	// 	for (var i=0;i<dip_list.length;i++){
+	// 		innerStr+="<option>"+dip_list[i]+"</option>";
+	// 	}
+	// 	$("select[name='dip_card']").html(innerStr);
+	// });
 </script>
 </body>
 </html>

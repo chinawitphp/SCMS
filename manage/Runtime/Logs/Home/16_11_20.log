@@ -1,0 +1,134 @@
+[ 2016-11-20T18:44:33+08:00 ] 127.0.0.1 /home/DipExpriedSearch/search/?type=2&idnumber=41&realname=XX
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009305s ]
+SQL: SHOW COLUMNS FROM `ms_expiredtime` [ RunTime:0.0599s ]
+SQL: SELECT * FROM `ms_expiredtime`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 19 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 31 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `ms_qualifyinfo` [ RunTime:0.0137s ]
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+SQL: SELECT ms_qualifyinfo.id,`secondaryid`,`limitid`,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_qualifyinfo` INNER JOIN ms_holdercomminfo ON ms_qualifyinfo.holderid = ms_holdercomminfo.id  WHERE `idnumber` LIKE '%41%' AND `realname` LIKE '%XX%' AND `regtime` BETWEEN '1970-01-02' AND '2016-11-20'  [ RunTime:0.1015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028320s ]
+
+[ 2016-11-20T18:44:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-11-20T18:44:37+08:00 ] 127.0.0.1 /home/DipExpriedSearch/search/?type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `ms_expiredtime` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `ms_expiredtime`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 19 行.
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 25 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 28 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 31 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `ms_qualifyinfo` [ RunTime:0.1042s ]
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+SQL: SELECT ms_qualifyinfo.id,`secondaryid`,`limitid`,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_qualifyinfo` INNER JOIN ms_holdercomminfo ON ms_qualifyinfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-20'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-11-20T18:55:03+08:00 ] 127.0.0.1 /home/DipExpriedSearch/search/?type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `ms_expiredtime` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `ms_expiredtime`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 19 行.
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 25 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 28 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 31 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `ms_qualifyinfo` [ RunTime:0.0087s ]
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 70 行.
+SQL: SELECT ms_qualifyinfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_qualifyinfo` INNER JOIN ms_holdercomminfo ON ms_qualifyinfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-20'  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant isexp - assumed 'isexp' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 76 行.
+NOTIC: [8] Use of undefined constant isexp - assumed 'isexp' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 80 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2016-11-20T18:57:59+08:00 ] 127.0.0.1 /home/DipExpriedSearch/search/?type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `ms_expiredtime` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `ms_expiredtime`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 19 行.
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 25 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 28 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 31 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 47 行.
+ERR: 1146:Table 'ms.ms_qualiyinfo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ms_qualiyinfo`
+ERR: 1146:Table 'ms.ms_qualiyinfo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ms_qualiyinfo`
+
+[ 2016-11-20T18:58:19+08:00 ] 127.0.0.1 /home/DipExpriedSearch/search/?type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `ms_expiredtime` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `ms_expiredtime`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 19 行.
+NOTIC: [8] Undefined index: idnumber G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 25 行.
+NOTIC: [8] Undefined index: realname G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 28 行.
+NOTIC: [8] Undefined index: regtimebegin G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 31 行.
+NOTIC: [8] Undefined index: regtimeend G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: expmouth G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `ms_qualifyinfo` [ RunTime:0.0144s ]
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 71 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: Page G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 71 行.
+NOTIC: [8] Trying to get property of non-object G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 71 行.
+SQL: SELECT ms_qualifyinfo.id,`idnumber`,`realname`,`regtime`,`endtime` FROM `ms_qualifyinfo` INNER JOIN ms_holdercomminfo ON ms_qualifyinfo.holderid = ms_holdercomminfo.id  WHERE `regtime` BETWEEN '1970-01-02' AND '2016-11-20'  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant dipname - assumed 'dipname' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant isexp - assumed 'isexp' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 78 行.
+NOTIC: [8] Use of undefined constant dipname - assumed 'dipname' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 74 行.
+NOTIC: [8] Use of undefined constant isexp - assumed 'isexp' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\DipExpriedSearchController.class.php 第 82 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+

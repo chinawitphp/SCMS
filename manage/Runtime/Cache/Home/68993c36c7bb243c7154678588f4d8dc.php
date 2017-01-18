@@ -6,12 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="/Public/css/style-seaman.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/jquery-ui.min.css">
-	<script type="text/javascript" src="/Public/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/Public/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="/Public/js/bootstrap.js"></script>
 	<script type="text/javascript" src="/Public/js/seaman.js"></script>
-	<script type="text/javascript" src="/Public/js/laydate.js"></script>
 </head>
 <body>
 <div class="header">
@@ -21,9 +18,9 @@
 		</div>
 		<div class="navigation">
 			<ul>
-				<li><a href="">张三</a></li>
-				<li><a href="">超级管理员</a></li>
-				<li><a href="">退出</a></li>
+				 <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href=""><?php echo ($vo["username2"]); ?></a></li>
+				<li><a href=""><?php echo ($vo["root"]); ?></a></li>
+				<li><a href="../enter/login">退出</a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 		</div>
 	</div>
@@ -34,8 +31,8 @@
 			<li><a href="#" onclick="openMenu('menu_1')"><span class="glyphicon glyphicon-user"></span>用户信息<span class="glyphicon
 			 glyphicon-chevron-down"></span></a></li>
 			<ul id="menu1"><!-- 哈哈 onclick自定义传值，修改自定义id的显示与否，用jq的.slideToggle() -->
-			    <li><a href="./personal_information.html"><span class="glyphicon glyphicon-comment"></span>个人信息</a></li>
-				<li><a href="./change_password.html"><span class="glyphicon glyphicon-leaf"></span>修改密码</a></li>
+			    <li><a href="../index/personal_information.html"><span class="glyphicon glyphicon-comment"></span>个人信息</a></li>
+				<li><a href="../index/change_password.html"><span class="glyphicon glyphicon-leaf"></span>修改密码</a></li>
 			</ul>
 			<!-- <script type="text/javascript">
 				$("li a.menu").click(function(){
@@ -47,9 +44,9 @@
 			<li><a href="#" onclick="openMenu('menu_2')"><span class="glyphicon glyphicon-file"></span>用户信息管理<span class="glyphicon
 			 glyphicon-chevron-down"></span></a></li>
 			<ul id="menu2">
-				<li><a href="./user_add.html"><span class="glyphicon glyphicon-plus"></span>添加用户</a></li>
-				<li><a href="./user_manage.html"><span class="glyphicon glyphicon-th"></span>用户管理</a></li>
-				<li><a href="./user_information.html"><span class="glyphicon glyphicon-th-list"></span>常用成员信息</a></li>
+				<li><a href="../messagemanage/user_add"><span class="glyphicon glyphicon-plus"></span>添加用户</a></li>
+				<li><a href="../messagemanage/user_manage"><span class="glyphicon glyphicon-th"></span>用户管理</a></li>
+				<li><a href="../messagemanage/user_information"><span class="glyphicon glyphicon-th-list"></span>常用成员信息</a></li>
 			</ul>
 			<li><a href="#" onclick="openMenu('menu_3')"><span class="glyphicon glyphicon-file"></span>海船船员培训合格证书管理<span class="glyphicon
 			 glyphicon-chevron-down"></span></a></li>
@@ -98,7 +95,7 @@
 				<li><a href="./set_time.html"><span class="glyphicon glyphicon-bell"></span>提醒时间设置</a></li>
 				<li><a href="./set_type.html"><span class="glyphicon glyphicon-bookmark"></span>证书种类设置</a></li>
 				<li><a href="./set_name.html"><span class="glyphicon glyphicon-font"></span>培训合格证名称设置</a></li>
-				<li><a href="/Home/SignOrgSet/"><span class="glyphicon glyphicon-briefcase"></span>签发机关管理</a></li>
+				<li><a href="./set_sign.html"><span class="glyphicon glyphicon-briefcase"></span>签发机关管理</a></li>
 				<li><a href="./set_limit.html"><span class="glyphicon glyphicon-ban-circle"></span>适用的限制</a></li>
 				<li><a href="./set_level.html"><span class="glyphicon glyphicon-tower"></span>等级与职务</a></li>
 				<li><a href="./set_item.html"><span class="glyphicon glyphicon-book"></span>公约条款</a></li>
@@ -108,123 +105,78 @@
 		<div class="side-bottom"></div>
 	</div>
 </div>
-<div class="col-md-9 col-md-offset-3 main-content">
+<div class="col-md-10 col-md-offset-3 main-content">
 <div class="row">
 	<div class="col-md-9">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">海员证——录入</h3>
+				<h3 class="panel-title">常用成员信息</h3>
 			</div>
 			<div class="panel-body">
-				<form role="form" class="form-horizontal" action="/home/seamen_manage/addinfo/" method="post">
+				<form role="form" class="form-horizontal" action="../messagemanage/userinformation" method="post">
+				    <div class="form-group">
+				    	<label class="col-sm-2 control-label" for="field-1">姓名</label>
+				    	<div class="col-sm-3">
+				    		<input type="text" name="username" class="form-control pass_change" id="field-1" placeholder="请输入真实姓名" required="required">
+				    	</div>
+				    	<label class="col-sm-2 control-label">性别</label>
+				    	<div class="col-sm-3 select_user">
+                                            <select class="form-control input-lg" name="sex">
+				    		<option value="1">男</option>
+                                                <option value="0">女</option>
+				    	</select>
+				    	</div>
+				    </div>
+				    <div class="form-group-separator"></div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label" for="field-1">持证人身份证号</label>
-						<div class="col-sm-8">
-							<input type="text" name="idnumber" class="form-control pass_change" id="field-1" placeholder="请输入身份证号" required="required" onchange="id_card()">
-						</div>
-					</div>
-					<div class="form-group-separator"></div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label" for="field-2">持证人姓名</label>
+						<label class="col-sm-2 control-label" for="field-2">身份证号</label>
 						<div class="col-sm-4">
-							<input type="text" name="realname" class="form-control pass_change" id="field-2" placeholder="请输入姓名" value="">
+							<input type="text" name="id" class="form-control pass_change" id="field-2" placeholder="请输入身份证号" value="">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
-					<label class="col-sm-2 control-label">性别</label>
-					<div class="col-sm-3 select_user">
-					<select class="form-control input-lg" name="sex">
-						<option>男</option>
-						<option>女</option>
-					</select>
-					</div>
-					<label class="col-sm-2 control-label" for="field-3">国籍</label>
-					<div class="col-sm-3">
-						<input type="text" name="nation" class="form-control pass_change" id="field-3" placeholder="请输入国籍" value="中国">
-					</div>
+                                            <button type="submit" class="btn btn-info btn-single btn-lg">查询</button>
 					</div>
 					<div class="form-group-separator"></div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label" for="field-4">出生日期</label>
-						<div class="col-sm-3">
-							<input type="text" name="birth" class="form-control pass_change" id="field-4" onClick="laydate()" placeholder="请输入日期">
-						</div>
-						<label class="col-sm-2 control-label">出生地点</label>
-						<div class="col-sm-3 select_user">
-						<select name="birtharea" class="form-control input-lg">
-							<option>辽宁省</option>
-						</select>
-						</div>
-					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label" for="field-5">签发日期</label>
-						<div class="col-sm-3">
-							<input type="text" name="regtime" class="form-control pass_change" id="field-5" onClick="laydate()" placeholder="请输入签发日期">
-						</div>
-						<label class="col-sm-2 control-label" for="field-6">有效期至</label>
-						<div class="col-sm-3">
-							<input type="text" name="endtime" class="form-control pass_change" id="field-6" onClick="laydate()" placeholder="请输入截止日期">
-						</div>
+                                            
+					</div>
+				</form>
+				<form role="form" class="form-horizontal" action="http://localhost/seauser/index.php/home/messagemanage/userinformation_delete" method="post">
+                                    <button type="submit" class="btn btn-info btn-single btn-lg">删除</button>
+				    <div class="form-group">
+					<div class="table-responsive">
+							<table cellspacing="0" class="table table-small-font table-bordered table-striped">
+								<thead>
+								<tr>
+									<th><input type="checkbox" name="check_all" onclick="all_check()">全选</th>
+									<th>姓名</th>
+									<th>身份证号</th>
+									<th>性别</th>
+									<th>出生日期</th>
+									<th></th>
+								</tr>
+								</thead>
+								<tbody>
+							       <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$do): $mod = ($i % 2 );++$i;?><tr>
+							        <th><input type="checkbox" name="one"></th>
+							    	<th><?php echo ($do["username"]); ?></th>
+							    	<th><?php echo ($do["id"]); ?></th>
+							    	<th><?php echo ($do["sex"]); ?></th>
+							    	<th><?php echo ($do["birth"]); ?></th>
+							    </tr><?php endforeach; endif; else: echo "" ;endif; ?> 
+								</tbody>
+							</table>
 					</div>
 					<div class="form-group-separator"></div>
-					<div class="form-group">
-					<label class="col-sm-2 control-label">签发机关</label>
-					<div class="col-sm-8 select_user">
-					<select name="signorgid" class="form-control input-lg">
-					<?php if(is_array($org)): foreach($org as $key=>$vo): ?><option value=<?php echo ($vo["id"]); ?>><?php echo ($vo["ms_signorgname"]); ?></option>");<?php endforeach; endif; ?>
-					</select>
-					</div>
-					</div>
 					<div class="form-group-separator"></div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-info btn-single btn-lg">确认添加</button>
-					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
 </div>
-<script type="text/javascript">
-	//addIndex();
-
-    // 身份证号关联模块
-    $(document).ready(function(){
-    	var id_list=new Array();
-    	var idnumberList;
-    	$.ajax({
-    		type: "GET",
-    		url: "http://123.56.236.250/index.php/home/seamenManage/getCommInfo/?idnumber=1",
-    		dataType: "json",
-    		//async:false,
-    		success:function(msg){
-    			idnumberList=msg;
-    			for (var i=0;i<msg.length;i++){
-    				id_list[i]=msg[i].idnumber;
-    			}
-    		},
-    	});
-    	//console.log(id_list);
-    	$("input[name='card']").on("input",function(event){
-    		var input_value=event.target.value;
-    		if (input_value.length>1){
-    			$("input[name='card']").autocomplete({
-    				source: id_list,
-    			})
-    		}
-    	});
-    	$("input[name='card']").blur(function(){
-    		var id_number=$("input[name='card']").val();
-    		for (var i=0;i<id_list.length;i++){
-    			if (id_number == idnumberList[i].idnumber){
-    				$("input[name='name']").val( idnumberList[i].realname);
-    				break;
-    			}
-    		}
-    	});
-    });
-</script>
 </body>
 </html>

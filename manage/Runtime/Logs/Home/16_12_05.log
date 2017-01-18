@@ -1,0 +1,18 @@
+[ 2016-12-05T13:43:09+08:00 ] 127.0.0.1 /home/seamenManage/infoDetail/?id=8&type=app
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010378s ]
+SQL: SHOW COLUMNS FROM `ms_signorgtype` [ RunTime:0.3398s ]
+SQL: SELECT * FROM `ms_signorgtype`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ms_seameninfo` [ RunTime:0.0045s ]
+SQL: SELECT `holderid`,`idnumber`,`realname`,`regtime`,`endtime`,`signorgid` FROM `ms_seameninfo` INNER JOIN ms_holdercomminfo ON ms_seameninfo.holderid = ms_holdercomminfo.id  WHERE ms_seameninfo.id = '8'  [ RunTime:0.0473s ]
+NOTIC: [8] Use of undefined constant app - assumed 'app' G:\PHP\SEAMEN ManageSys\manage\Home\Controller\SeamenManageController.class.php 第 145 行.
+
+[ 2016-12-05T13:43:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+

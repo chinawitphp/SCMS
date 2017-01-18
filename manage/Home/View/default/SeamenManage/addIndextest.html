@@ -1,17 +1,14 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>海员船员资格证管理系统</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/style-seaman.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/jquery-ui.min.css">
-	<script type="text/javascript" src="/Public/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/Public/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="/Public/js/bootstrap.js"></script>
-	<script type="text/javascript" src="/Public/js/seaman.js"></script>
-	<script type="text/javascript" src="/Public/js/laydate.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-seaman.css">
+	<script type="text/javascript" src="PUBLIC/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="PUBLIC/seaman.js"></script>
 </head>
 <body>
 <div class="header">
@@ -28,7 +25,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-md-3 sidebar">
+<div class="col-md-2 sidebar">
 	<div class="drop-navigation">
 		<ul class="nav nav-sidebar">
 			<li><a href="#" onclick="openMenu('menu_1')"><span class="glyphicon glyphicon-user"></span>用户信息<span class="glyphicon
@@ -98,7 +95,7 @@
 				<li><a href="./set_time.html"><span class="glyphicon glyphicon-bell"></span>提醒时间设置</a></li>
 				<li><a href="./set_type.html"><span class="glyphicon glyphicon-bookmark"></span>证书种类设置</a></li>
 				<li><a href="./set_name.html"><span class="glyphicon glyphicon-font"></span>培训合格证名称设置</a></li>
-				<li><a href="/Home/SignOrgSet/"><span class="glyphicon glyphicon-briefcase"></span>签发机关管理</a></li>
+				<li><a href="./set_sign.html"><span class="glyphicon glyphicon-briefcase"></span>签发机关管理</a></li>
 				<li><a href="./set_limit.html"><span class="glyphicon glyphicon-ban-circle"></span>适用的限制</a></li>
 				<li><a href="./set_level.html"><span class="glyphicon glyphicon-tower"></span>等级与职务</a></li>
 				<li><a href="./set_item.html"><span class="glyphicon glyphicon-book"></span>公约条款</a></li>
@@ -108,78 +105,87 @@
 		<div class="side-bottom"></div>
 	</div>
 </div>
-<div class="col-md-9 col-md-offset-3 main-content">
+<div class="col-md-10 col-md-offset-3 main-content">
 <div class="row">
 	<div class="col-md-9">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">海员证——录入</h3>
+				<h3 class="panel-title">海员证录入</h3>
 			</div>
 			<div class="panel-body">
-				<form role="form" class="form-horizontal" action="/home/seamen_manage/addinfo/" method="post">
+				<form role="form" class="form-horizontal" action="" method="post">
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-1">持证人身份证号</label>
 						<div class="col-sm-8">
-							<input type="text" name="idnumber" class="form-control pass_change" id="field-1" placeholder="请输入身份证号" required="required" onchange="id_card()">
+							<input type="text" name="" class="form-control pass_change" id="field-1" placeholder="请输入身份证号" required="required">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-2">持证人姓名</label>
-						<div class="col-sm-4">
-							<input type="text" name="realname" class="form-control pass_change" id="field-2" placeholder="请输入姓名" value="">
+						<div class="col-sm-8">
+							<input type="text" name="" class="form-control pass_change" id="field-2" placeholder="请输入姓名" value="">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
 					<label class="col-sm-2 control-label">性别</label>
-					<div class="col-sm-3 select_user">
-					<select class="form-control input-lg" name="sex">
+					<div class="col-sm-10 select_user">
+					<select class="form-control input-lg">
 						<option>男</option>
 						<option>女</option>
 					</select>
 					</div>
-					<label class="col-sm-2 control-label" for="field-3">国籍</label>
-					<div class="col-sm-3">
-						<input type="text" name="nation" class="form-control pass_change" id="field-3" placeholder="请输入国籍" value="中国">
+					</div>
+					<div class="form-group-separator"></div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="field-3">国籍</label>
+						<div class="col-sm-8">
+							<input type="text" name="" class="form-control pass_change" id="field-3" placeholder="请输入国籍" value="中国">
+						</div>
+					</div>
+					<div class="form-group-separator"></div>
+					<div class="form-group">
+					<label class="col-sm-2 control-label">出生地点</label>
+					<div class="col-sm-10 select_user">
+					<select class="form-control input-lg">
+						<option>辽宁省</option>
+					</select>
 					</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-4">出生日期</label>
-						<div class="col-sm-3">
-							<input type="text" name="birth" class="form-control pass_change" id="field-4" onClick="laydate()" placeholder="请输入日期">
-						</div>
-						<label class="col-sm-2 control-label">出生地点</label>
-						<div class="col-sm-3 select_user">
-						<select name="birtharea" class="form-control input-lg">
-							<option>辽宁省</option>
-						</select>
+						<div class="col-sm-8">
+							<input type="text" name="" class="form-control pass_change" id="field-4" placeholder="请输入出生日期">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-5">签发日期</label>
-						<div class="col-sm-3">
-							<input type="text" name="regtime" class="form-control pass_change" id="field-5" onClick="laydate()" placeholder="请输入签发日期">
+						<div class="col-sm-8">
+							<input type="text" name="" class="form-control pass_change" id="field-5" placeholder="请输入签发日期">
 						</div>
+					</div>
+					<div class="form-group-separator"></div>
+					<div class="form-group">
 						<label class="col-sm-2 control-label" for="field-6">有效期至</label>
-						<div class="col-sm-3">
-							<input type="text" name="endtime" class="form-control pass_change" id="field-6" onClick="laydate()" placeholder="请输入截止日期">
+						<div class="col-sm-8">
+							<input type="text" name="" class="form-control pass_change" id="field-6" placeholder="请输入截止日期">
 						</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
 					<label class="col-sm-2 control-label">签发机关</label>
-					<div class="col-sm-8 select_user">
-					<select name="signorgid" class="form-control input-lg">
-					<?php if(is_array($org)): foreach($org as $key=>$vo): ?><option value=<?php echo ($vo["id"]); ?>><?php echo ($vo["ms_signorgname"]); ?></option>");<?php endforeach; endif; ?>
+					<div class="col-sm-10 select_user">
+					<select class="form-control input-lg">
+						<option>中华人民共和国辽宁海事局</option>
 					</select>
 					</div>
 					</div>
 					<div class="form-group-separator"></div>
 					<div class="form-group">
-						<button type="submit" class="btn btn-info btn-single btn-lg">确认添加</button>
+						<button type="button" class="btn btn-info btn-single btn-lg">确认添加</button>
 					</div>
 				</form>
 			</div>
@@ -188,43 +194,7 @@
 </div>
 </div>
 <script type="text/javascript">
-	//addIndex();
-
-    // 身份证号关联模块
-    $(document).ready(function(){
-    	var id_list=new Array();
-    	var idnumberList;
-    	$.ajax({
-    		type: "GET",
-    		url: "http://123.56.236.250/index.php/home/seamenManage/getCommInfo/?idnumber=1",
-    		dataType: "json",
-    		//async:false,
-    		success:function(msg){
-    			idnumberList=msg;
-    			for (var i=0;i<msg.length;i++){
-    				id_list[i]=msg[i].idnumber;
-    			}
-    		},
-    	});
-    	//console.log(id_list);
-    	$("input[name='card']").on("input",function(event){
-    		var input_value=event.target.value;
-    		if (input_value.length>1){
-    			$("input[name='card']").autocomplete({
-    				source: id_list,
-    			})
-    		}
-    	});
-    	$("input[name='card']").blur(function(){
-    		var id_number=$("input[name='card']").val();
-    		for (var i=0;i<id_list.length;i++){
-    			if (id_number == idnumberList[i].idnumber){
-    				$("input[name='name']").val( idnumberList[i].realname);
-    				break;
-    			}
-    		}
-    	});
-    });
+	addIndex();
 </script>
 </body>
 </html>

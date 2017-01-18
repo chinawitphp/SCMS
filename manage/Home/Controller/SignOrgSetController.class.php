@@ -13,7 +13,11 @@ class SignOrgSetController extends SysSetController {
         $signorg = D("signorgtype");
         $condition['id']= $_GET['id'];
         $signorg->create($map);
-        $signorg->where($condition)->save();
+        if($signorg->where($condition)->save()){
+            $this->success('修改成功成功') ;
+            } else {
+            $this->error('修改失败') ;
+          }
     }
     
     public function add(){
